@@ -4,6 +4,7 @@ body {
   background-color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 ul {
@@ -30,12 +31,41 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* #region Header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
+}
+
 .header {
   background-color: #ffffff;
 }
 
 .logo {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -49,11 +79,24 @@ p {
   color: #2e2f42;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
 .header-link {
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -65,9 +108,16 @@ p {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list{
+    display: flex;
+    gap: 40px;
 }
 
 .address-link {
+  display: block;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
